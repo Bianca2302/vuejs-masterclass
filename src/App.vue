@@ -1,11 +1,12 @@
 <script setup>
 import {reactive} from 'vue';
 
-const template = reactive({})
 </script>
 
 <template>
-  <h1>You did it!</h1>
+  <main>
+    <RouterView></RouterView>
+  </main>
 </template>
 
 <style scoped></style>
