@@ -1,9 +1,23 @@
+// tsconfig.json (or tsconfig.app.json)
 {
   "compilerOptions": {
+    "target": "ESNext",
     "module": "ESNext",
-    "target": "ES2020",
-    "moduleResolution": "Node",
-    "lib": ["ESNext", "DOM"]
-  },
-  "include": ["src/**/*.js", "src/**/*.ts", "src/**/*.vue", "src/**/*.d.ts"]
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": "true",
+    "moduleDetection": "force",
+    "jsx": "preserve",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "types": [
+      "vite/client",
+      "vue-router",
+      "node",
+      "./src/typed-router.d.ts"
+    ]
+  }
 }
