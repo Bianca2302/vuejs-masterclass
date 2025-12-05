@@ -4,7 +4,6 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "allowSyntheticDefaultImports": "true",
     "moduleDetection": "force",
     "jsx": "preserve",
     "allowImportingTsExtensions": true,
@@ -15,9 +14,13 @@
     "skipLibCheck": true,
     "types": [
       "vite/client",
-      "vue-router",
       "node",
-      "./src/typed-router.d.ts"
+      "unplugin-vue-router/client"
+    ],
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.vue",
+      "src/typed-router.d.ts"
     ]
   }
 }

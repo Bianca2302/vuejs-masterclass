@@ -1,12 +1,12 @@
-<script setup>
-import {reactive} from 'vue';
-
-</script>
-
 <template>
   <main>
     <RouterView></RouterView>
   </main>
 </template>
 
-<style scoped></style>
+<script setup>
+import { supabase } from '@/lib/supabaseClient.ts';
+
+console.log(supabase);
+</script>
+
